@@ -7,27 +7,19 @@
 ![JavaScript](https://img.shields.io/badge/JavaScript_ES_Modules-F7DF1E?style=flat-square&logo=javascript&logoColor=0F172A)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
 ![Accesibilidad](https://img.shields.io/badge/Contraste-WCAG_AA%2FAAA-065F46?style=flat-square)
-![Despliegue](https://img.shields.io/badge/Deploy-GitHub_Pages_%7C_Vercel-0F172A?style=flat-square)
+![Vercel](https://img.shields.io/badge/Deploy-Vercel-0F172A?style=flat-square&logo=vercel&logoColor=white)
 
 ---
 
 ## Cómo probar el proyecto
 
-1. **Clona el repositorio:**
-   ```bash
-   git clone https://github.com/Deivy22/eduespacios-web.git
-   cd eduespacios-web
-   ```
-2. **Inicia un servidor local** *(necesario para cargar los ES Modules nativos)*:
-   - **VS Code:** haz clic derecho en `index.html` → **Open with Live Server**.
-   - **Python:** ejecuta `python -m http.server 8000` y abre `http://localhost:8000`.
-3. **Flujos interactivos recomendados para evaluar el prototipo:**
-   - **Inicio:** explora los indicadores KPI, los accesos rápidos Bento, las notificaciones y el perfil.
-   - **Tutorías Académicas:** combina filtros de asignatura, turno y docente, elige una franja de 30 min y solicita una tutoría.
-   - **Reserva de Laboratorios:** cambia de laboratorio, fecha y turno, selecciona una celda **Libre**, indica un motivo de práctica y confirma para generar tu voucher.
-   - **Mis Reservas:** filtra por pestañas, abre **Detalle y Pase QR**, prueba **Cancelar** (verifica cómo se libera automáticamente el cupo/celda) y usa **Restablecer demo** cuando quieras volver al estado inicial.
+- **Abrir aplicación en Vercel:** [https://eduespacios-web.vercel.app](https://eduespacios-web.vercel.app)
 
-*(También puedes desplegarlo en un clic en **Vercel** o **GitHub Pages** siguiendo la sección [Despliegue en GitHub Pages o Vercel](#despliegue-en-github-pages-o-vercel).)*
+### Flujos recomendados para explorar el prototipo
+- **Inicio:** explora los indicadores KPI, los accesos rápidos Bento, las notificaciones y el perfil.
+- **Tutorías Académicas:** combina filtros de asignatura, turno y docente, elige una franja de 30 min y solicita una tutoría.
+- **Reserva de Laboratorios:** cambia de laboratorio, fecha y turno, selecciona una celda **Libre**, indica un motivo de práctica y confirma para generar tu voucher.
+- **Mis Reservas:** filtra por pestañas, abre **Detalle y Pase QR**, prueba **Cancelar** (verifica cómo se libera automáticamente el cupo/celda) y usa **Restablecer demo** cuando quieras volver al estado inicial.
 
 ---
 
@@ -68,7 +60,7 @@ El proyecto separa de forma explícita presentación, componentes reutilizables,
 eduespacios-web/
 ├── .gitignore                        # Exclusiones de SO, editores, logs y cachés
 ├── index.html                        # Punto de entrada SPA y montaje de portales
-├── README.md                         # Documentación técnica y guía de despliegue
+├── README.md                         # Documentación del proyecto
 └── src/
     ├── main.js                       # Arranque, enrutador (#hash) y delegación global
     ├── styles/                       # 1) Tema pastel y estilos base
@@ -129,12 +121,3 @@ Debido al uso de **ES Modules nativos** (`<script type="module">`), el proyecto 
 ```bash
 npx serve .
 ```
-
----
-
-## Despliegue en GitHub Pages o Vercel
-
-El proyecto utiliza **rutas relativas limpias (`./src/...`)** y **enrutamiento por `#hash`**, por lo que funciona sin configuración adicional tanto en la raíz de un dominio como en subrutas (`/eduespacios-web/`):
-
-- **GitHub Pages:** en el repositorio de GitHub ve a **Settings → Pages → Build and deployment**, selecciona **Deploy from a branch**, elige `main` y carpeta `/ (root)` y guarda.
-- **Vercel:** importa el repositorio en [vercel.com](https://vercel.com), deja el preset en **Other / Static** (sin comando de build, directorio de salida `.`) y haz clic en **Deploy**.
