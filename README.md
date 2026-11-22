@@ -11,11 +11,23 @@
 
 ---
 
-## Demostración en vivo
+## Cómo probar el proyecto
 
-- **Repositorio:** [github.com/Deivy22/eduespacios-web](https://github.com/Deivy22/eduespacios-web)
-- **GitHub Pages:** [https://deivy22.github.io/eduespacios-web/](https://deivy22.github.io/eduespacios-web/) *(habilitar en Settings → Pages → `main` / `root`)*
-- **Vercel (opcional):** `https://eduespacios-web.vercel.app/`
+1. **Clona el repositorio:**
+   ```bash
+   git clone https://github.com/Deivy22/eduespacios-web.git
+   cd eduespacios-web
+   ```
+2. **Inicia un servidor local** *(necesario para cargar los ES Modules nativos)*:
+   - **VS Code:** haz clic derecho en `index.html` → **Open with Live Server**.
+   - **Python:** ejecuta `python -m http.server 8000` y abre `http://localhost:8000`.
+3. **Flujos interactivos recomendados para evaluar el prototipo:**
+   - **Inicio:** explora los indicadores KPI, los accesos rápidos Bento, las notificaciones y el perfil.
+   - **Tutorías Académicas:** combina filtros de asignatura, turno y docente, elige una franja de 30 min y solicita una tutoría.
+   - **Reserva de Laboratorios:** cambia de laboratorio, fecha y turno, selecciona una celda **Libre**, indica un motivo de práctica y confirma para generar tu voucher.
+   - **Mis Reservas:** filtra por pestañas, abre **Detalle y Pase QR**, prueba **Cancelar** (verifica cómo se libera automáticamente el cupo/celda) y usa **Restablecer demo** cuando quieras volver al estado inicial.
+
+*(También puedes desplegarlo en un clic en **Vercel** o **GitHub Pages** siguiendo la sección [Despliegue en GitHub Pages o Vercel](#despliegue-en-github-pages-o-vercel).)*
 
 ---
 
