@@ -13,11 +13,9 @@
 
 ## Demostración en vivo
 
-> **Enlace de despliegue (próximamente):**
-> - **GitHub Pages:** `https://<tu-usuario>.github.io/eduespacios-web/`
-> - **Vercel:** `https://eduespacios-web.vercel.app/`
-
-*(Actualiza el enlace anterior una vez habilites GitHub Pages o importes el repositorio en Vercel.)*
+- **Repositorio:** [github.com/Deivy22/eduespacios-web](https://github.com/Deivy22/eduespacios-web)
+- **GitHub Pages:** [https://deivy22.github.io/eduespacios-web/](https://deivy22.github.io/eduespacios-web/) *(habilitar en Settings → Pages → `main` / `root`)*
+- **Vercel (opcional):** `https://eduespacios-web.vercel.app/`
 
 ---
 
